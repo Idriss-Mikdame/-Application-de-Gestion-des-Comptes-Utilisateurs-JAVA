@@ -20,5 +20,13 @@ public class GetiondeFonction {
         stock.add(new Utilisateur(nom,age,email,motdepass,role));
 
     }
+    public static void aff(){
+        if (stock.isEmpty()){
+            System.out.println("aucun utilisateur !!");
+        }
+        for (Utilisateur i : stock){
+            System.out.println(i);
+        }
+    }
 
 }
