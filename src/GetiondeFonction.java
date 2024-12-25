@@ -29,4 +29,20 @@ public class GetiondeFonction {
         }
     }
 
+    public static void supp(){
+        System.out.print("Entrer email pour supprimer un utilisateur :) : " );
+        String email = input.next();
+        boolean supprimer = false;
+        for (Utilisateur i : stock){
+            if (i.getEmail().equals(email)){
+                stock.remove(i);
+                supprimer = true;
+                break;
+            }
+        }
+        if (supprimer == false){
+            System.out.println("aucun utilisateur trouvé avec cet email ");
+        }
+    }
+
 }
