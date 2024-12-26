@@ -1,12 +1,13 @@
 public class Personne {
     String nom ;
     int age;
+    String CIN;
 
-    public Personne(String nom, int age) {
+    public Personne(String nom, int age,String CIN) {
         this.nom = nom;
         this.age = age;
+        this.CIN = CIN;
     }
-
     public String getNom() {
         return nom;
     }
@@ -22,4 +23,8 @@ public class Personne {
     public int getAge() {
         return age;
     }
+
+    public String getCIN() {return CIN;}
+
+    public void setCIN(String CIN) {this.CIN = CIN;}
 }

@@ -10,7 +10,8 @@ public class Main {
             System.out.println("1. Ajouter un utilisateur");
             System.out.println("2. Afficher les utilisateurs");
             System.out.println("3. Supprimer un utilisateur");
-            System.out.println("0. Quitter");
+            System.out.println("4. Rechercher un utilisateur");
+            System.out.println("5. Quitter");
             System.out.print("Votre choix : ");
             choix = input.nextInt();
             switch (choix){
@@ -24,17 +25,16 @@ public class Main {
                     GetiondeFonction.supp();
                     break;
                 case 4:
+                    GetiondeFonction.rechercher();
+                    break;
+                case 5:
                     System.out.println("Byee !!!!");
                     break;
                 default:
                     System.out.println("choix invalide ");
 
             }
-        }while (choix !=4 );
-
-
-
-
+        }while (choix !=5 );
 
     }
 }

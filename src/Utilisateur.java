@@ -3,8 +3,8 @@ public class Utilisateur extends Personne {
     String motdepass;
     Role role;
 
-    public Utilisateur(String nom, int age, String email, String motdepass, Role role) {
-        super(nom, age);
+    public Utilisateur(String nom, int age,String CIN, String email, String motdepass, Role role) {
+        super(nom, age,CIN);
         this.email = email;
         this.motdepass = motdepass;
         this.role = role;
@@ -39,9 +39,10 @@ public class Utilisateur extends Personne {
     @Override
     public String toString() {
         return
-                "nom-------->" + getNom() +"\n"+
-                        "Age-------->"+getAge()+"\n"+
-                        "email------>" + getEmail() +"\n"+
-                        "role------->" + getRole().getRolename();
+                        "nom-------->" + getNom() +"\n"+
+                        "CIN-------->" +getCIN() +"\n"+
+                        "Age-------->"  +getAge()+"\n"+
+                        "Email------>" + getEmail() +"\n"+
+                        "Role------->" + getRole().getRolename();
     }
 }
