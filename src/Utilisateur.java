@@ -39,10 +39,11 @@ public class Utilisateur extends Personne {
     @Override
     public String toString() {
         return
-                        "nom-------->" + getNom() +"\n"+
-                        "CIN-------->" +getCIN() +"\n"+
-                        "Age-------->"  +getAge()+"\n"+
-                        "Email------>" + getEmail() +"\n"+
-                        "Role------->" + getRole().getRolename();
+                        "------AFFICHAGE UTILISATEUR A ETE AJOUTE------\n"+
+                        "Nom-------->  " + getNom() +"\n"+
+                        "CIN-------->  " +getCIN() +"\n"+
+                        "Age-------->  "   +getAge()+"\n"+
+                        "Email------>  " + getEmail() +"\n"+
+                        "Role------->  " + getRole().getRolename();
     }
 }
